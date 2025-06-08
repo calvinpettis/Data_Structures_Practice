@@ -9,26 +9,24 @@ public class BST {
     public static void main(String[] args) {
         BST bst = new BST();
         Random rand = new Random();
-        // for (int i = 0; i < Math.pow(2, 12); i++) {
-        // bst.insert(rand.nextInt(10000000));
-        // }
-        // System.out.println(bst.min().data);
-        // System.out.println(bst.max().data);
-        // bst.print(bst.root);
+        for (int i = 0; i < Math.pow(2, 24); i++) {
+            bst.insert(rand.nextInt(10000000));
+        }
+        bst.print(bst.root);
 
-        bst.insert(50);
-        bst.insert(30);
-        bst.insert(70);
-        bst.insert(20);
-        bst.insert(40);
-        bst.insert(60);
-        bst.insert(80);
-        if (bst.pred(50) != null) {
-            System.out.println("pred: " + bst.pred(50).data + "\n");
-        }
-        if (bst.succ(50) != null) {
-            System.out.println("succ: " + bst.succ(50).data + "\n");
-        }
+        // bst.insert(50);
+        // bst.insert(30);
+        // bst.insert(70);
+        // bst.insert(20);
+        // bst.insert(40);
+        // bst.insert(60);
+        // bst.insert(80);
+        // if (bst.pred(50) != null) {
+        // System.out.println("pred: " + bst.pred(50).data + "\n");
+        // }
+        // if (bst.succ(50) != null) {
+        // System.out.println("succ: " + bst.succ(50).data + "\n");
+        // }
     }
 
     /**
